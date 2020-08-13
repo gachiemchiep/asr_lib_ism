@@ -12,7 +12,7 @@ if(COMMAND cmake_policy)
     cmake_policy(SET CMP0003 NEW)
 endif(COMMAND cmake_policy)
 
-find_package(Boost COMPONENTS system filesystem program_options REQUIRED)
+find_package(Boost COMPONENTS system filesystem program_options thread REQUIRED)
 include_directories(${Boost_INCLUDE_DIR})
 
 add_subdirectory(ISM ./build)
